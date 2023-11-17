@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>GSF.Example</groupId>
+  <artifactId>Java_Framework_Spring</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Java_Framework_Spring</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>AOP_1_Xml_SpringApi</module>
+    <module>AOP_2_Xml_CustomClass</module>
+    <module>AOP_3_Xml_Annotation</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+
+  <!--   需要的依赖  （应该用dependencyManagement管理的，方便举例子，就用这样的全局依赖形式了） -->
+
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.1</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- 使用AOP织入需要的依赖 -->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>6.0.13</version>
+      </dependency>
+
+    </dependencies>
+
+
+</project>

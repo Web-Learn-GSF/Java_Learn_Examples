@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--  注册bean  -->
+    <bean id="userService" class="GSF.Example.Service.UserServiceImpl" />
+    <bean id="logBefore" class="GSF.Example.Log.LogBeforeMethod" />
+    <bean id="logAfter" class="GSF.Example.Log.LogAfterMethod"/>
+
+<!--  Aop的设置-->
+    <aop:config>
+<!--      切入点-->
+        <aop:pointcut id="pointcut" expression="execution(* GSF.Example.Service.UserServiceImpl.*(..))"/>
+<!--        执行前置通知-->
+        <aop:advisor advice-ref="logBefore" pointcut-ref="pointcut" />
+        <aop:advisor advice-ref="logAfter" pointcut-ref="pointcut" />
+    </aop:config>
+</beans>
