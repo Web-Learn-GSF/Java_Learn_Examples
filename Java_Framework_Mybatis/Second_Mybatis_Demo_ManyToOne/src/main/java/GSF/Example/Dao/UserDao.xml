@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        namespace=绑定一个Dao/Mapper接口-->
+<mapper namespace="GSF.Example.Dao.UserDao">
+    <!--    select查询语句，ID对应方法名-->
+    <select id="getTeacher"  resultType="GSF.Example.Pojo.Teacher">
+        select * from learn_mybatis.teacher where id=#{id}
+    </select>
+
+    <!--    根据查询嵌套处理-->
+    <select id="getStudent" resultMap="getStudent">
+        select id, name, tid from learn_mybatis.student;
+    </select>
+
+    <resultMap id="getStudent" type="GSF.Example.Pojo.Student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <association property="teacher" column="tid" javaType="GSF.Example.Pojo.Teacher" select="getTeacher"/>
+    </resultMap>
+
+    <!--    根据结果嵌套处理-->
+    <select id="getStudent2" resultMap="getStudent2">
+        select  s.id s_id ,s.name s_name, t.id t_id, t.name t_name from learn_mybatis.student s, learn_mybatis.teacher t  where s.tid=t.id
+    </select>
+
+    <resultMap id="getStudent2" type="GSF.Example.Pojo.Student">
+        <result property="id" column="s_id"/>
+        <result property="name" column="s_name"/>
+        <association property="teacher" javaType="GSF.Example.Pojo.Teacher">
+            <result property="id" column="t_id"/>
+            <result property="name" column="t_name"/>
+        </association>
+    </resultMap>
+
+
+
+</mapper>

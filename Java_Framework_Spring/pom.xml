@@ -13,6 +13,9 @@
     <module>AOP_1_Xml_SpringApi</module>
     <module>AOP_2_Xml_CustomClass</module>
     <module>AOP_3_Xml_Annotation</module>
+    <module>Integrate_Mybatis_First_Way</module>
+    <module>Integrate_Mybatis_Second_Way</module>
+    <module>Transaction_Spring_Mybatis</module>
   </modules>
 
   <properties>
@@ -45,5 +48,24 @@
 
     </dependencies>
 
+  <!--    在build中配置resources ， 来防止我们资源导出失败的问题【出现在资源不是放置在resource目录情况下】-->
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.properties</include>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
 
 </project>

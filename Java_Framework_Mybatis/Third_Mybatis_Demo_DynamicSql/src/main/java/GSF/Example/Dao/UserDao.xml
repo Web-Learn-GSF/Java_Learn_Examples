@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        namespace=绑定一个Dao/Mapper接口-->
+<mapper namespace="GSF.Example.Dao.UserDao">
+
+    <!--    select查询语句，ID对应方法名-->
+    <select id="getBlogIf"  parameterType="map" resultType="GSF.Example.Pojo.Blog">
+        select * from learn_mybatis.blog where 1=1
+        <if test="title != null">
+            and title=#{title}
+        </if>
+
+        <if test="author != null">
+            and author=#{author}
+        </if>
+    </select>
+
+    <select id="getBlogChoose_When_Otherwise"  parameterType="map" resultType="GSF.Example.Pojo.Blog">
+        select * from learn_mybatis.blog
+        <!-- 这里用到了下一个查询才讲述的where标签 -->
+        <where>
+            <!-- 传入的参数：有title就按照title算，再有后续参数，也不用；没有title，如下参数依次判断是否有；参数都没有，就执行otherwise中的条件 -->
+            <choose>
+                <when test="title != null">
+                   and title = #{title}
+                </when>
+
+                 <when test="author !=null">
+                    and author = #{author}
+                </when>
+
+                <otherwise>
+                    and id = 1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <update id="updateBlogSet" parameterType="map">
+        update learn_mybatis.blog
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="author != null">
+                author = #{author},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <sql id="if-title-author">
+        <if test="title != null">
+            title = #{title},
+        </if>
+        <if test="author != null">
+            author = #{author},
+        </if>
+    </sql>
+
+    <update id="updateBlogTrim" parameterType="map">
+        update learn_mybatis.blog
+        <trim prefix="SET" suffixOverrides=",">
+            <include refid="if-title-author">
+            </include>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <select id="getBlogForeach"  parameterType="map" resultType="GSF.Example.Pojo.Blog">
+        select * from learn_mybatis.blog
+        <where>
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                id=#{id}
+            </foreach>
+        </where>
+    </select>
+
+
+</mapper>

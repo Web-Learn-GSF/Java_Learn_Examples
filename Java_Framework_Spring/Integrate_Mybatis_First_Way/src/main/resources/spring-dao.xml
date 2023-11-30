@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- sqlSessionFactory的bean注册 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 可以绑定mybatis的所有有关配置文件 -->
+        <!-- 绑定mybatis核心配置文件，也可以不绑定，用property参数实现核心配置文件里面的所有功能 -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+
+        <!-- 绑定mapper.xml文件：可以不在这里绑定，在mybatis核心配置文件中绑定-->
+        <!-- 这个版本下，用路径统配符，必须用classpath*，不能用classpath -->
+        <property name="mapperLocations" value="classpath*:GSF/Example/Dao/*.xml"/>
+
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/learn_mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <!-- 获取sqlSession -->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="userDaoImpl" class="GSF.Example.Dao.UserDaoImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+</beans>

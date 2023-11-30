@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        namespace=绑定一个Dao/Mapper接口-->
+<mapper namespace="GSF.Example.Dao.UserDao">
+    <resultMap id="UserMap" type="GSF.Example.Pojo.User">
+<!--    column：数据库中的列名；property：实体类中的属性名，一样的就无需再配置进来（配置了也不影响）-->
+        <result column="pwd" property="password"/>
+    </resultMap>
+
+    <!--    select查询语句，ID对应方法名-->
+    <select id="getUserList" resultMap="UserMap">
+        select id, name, pwd from learn_mybatis.user
+    </select>
+
+    <select id="getUserById" parameterType="int" resultType="GSF.Example.Pojo.User">
+        select id, name, pwd as password from learn_mybatis.user where id=#{id}
+    </select>
+
+
+    <insert id="addUser" parameterType="GSF.Example.Pojo.User">
+        insert into learn_mybatis.user(id, name, pwd) values (#{id}, #{name}, #{password});
+    </insert>
+
+    <insert id="addUserByMap" parameterType="map">
+        insert into learn_mybatis.user(id, name, pwd) values (#{user_id}, #{user_name}, #{user_pwd});
+    </insert>
+
+    <update id="updateUser" parameterType="GSF.Example.Pojo.User">
+        update learn_mybatis.user set name=#{name}, pwd=#{password} where id=#{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from learn_mybatis.user where id=#{id};
+    </delete>
+</mapper>
