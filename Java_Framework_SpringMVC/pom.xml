@@ -16,6 +16,10 @@
     <module>Demo-02-SpringMVC-annotation</module>
     <module>Demo-03-SpringMVC-Controller_Restful</module>
     <module>Demo-04-SpringMVC-DataProcess_Redirection</module>
+    <module>Demo-05-SpringMVC-Json</module>
+    <module>Demo-06-SpringMVC-AjaxLearn</module>
+      <module>Demo-07-SpringMVC-Interceptor</module>
+      <module>Demo-08-SpringMVC-FileUpload</module>
 
   </modules>
 
