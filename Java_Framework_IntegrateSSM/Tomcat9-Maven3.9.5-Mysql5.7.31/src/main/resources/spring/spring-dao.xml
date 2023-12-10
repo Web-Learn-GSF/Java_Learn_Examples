@@ -39,7 +39,7 @@
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
     </bean>
 
-    <!--    配置dao接口扫描包，动态的实现了Dao接口可以注入到Spring容器中
+    <!--配置dao接口扫描包，动态的实现了Dao接口可以注入到Spring容器中
     sqlSessionFactoryBeanName 继承
     sqlSessionTemplateBeanName 私有化-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

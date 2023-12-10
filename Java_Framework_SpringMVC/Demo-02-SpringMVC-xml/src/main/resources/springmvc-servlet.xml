@@ -17,6 +17,6 @@
 
 
     <!--Handler-->
-    <bean id="/hello" class="Controller.com.kuang.HelloController"/>
+    <bean id="/hello" class="GSF.Example.Controller.HelloController"/>
 
 </beans>

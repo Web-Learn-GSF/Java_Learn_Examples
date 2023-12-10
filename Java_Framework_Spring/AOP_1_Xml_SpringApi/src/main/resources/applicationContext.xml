@@ -7,6 +7,7 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+
 <!--  注册bean  -->
     <bean id="userService" class="GSF.Example.Service.UserServiceImpl" />
     <bean id="logBefore" class="GSF.Example.Log.LogBeforeMethod" />

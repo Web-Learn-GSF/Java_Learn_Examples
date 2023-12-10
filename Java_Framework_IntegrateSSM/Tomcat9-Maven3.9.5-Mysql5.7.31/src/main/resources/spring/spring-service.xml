@@ -33,7 +33,6 @@
         <!--        配置事务的传播特性:new propagation
         REQUIRED  没有事务给它添加事务-->
         <tx:attributes>
-
             <tx:method name="*" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>

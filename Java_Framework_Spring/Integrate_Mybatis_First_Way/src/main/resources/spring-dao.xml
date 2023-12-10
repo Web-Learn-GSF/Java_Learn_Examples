@@ -17,7 +17,6 @@
         <!-- 绑定mapper.xml文件：可以不在这里绑定，在mybatis核心配置文件中绑定-->
         <!-- 这个版本下，用路径统配符，必须用classpath*，不能用classpath -->
         <property name="mapperLocations" value="classpath*:GSF/Example/Dao/*.xml"/>
-
     </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
