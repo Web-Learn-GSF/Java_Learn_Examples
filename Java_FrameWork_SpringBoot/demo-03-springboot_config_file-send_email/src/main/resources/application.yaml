@@ -1,0 +1,13 @@
+#发件人相关的信息
+email:
+  user: sfguo1@126.com
+  code: 123 # 密码
+  host: smtp.126.com
+  auth: true
+
+
+#学生的爱好
+hobbies:
+  - 打篮球
+  - 打豆豆
+  - 打游戏
