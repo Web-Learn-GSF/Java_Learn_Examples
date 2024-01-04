@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo01-use_jedis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo01-use_jedis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo02-use_jedis_pool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo02-use_jedis_pool/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo03-SpringDataRedis-RedisTemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo03-SpringDataRedis-RedisTemplate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo03-use_SpringDataRedis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo03-use_SpringDataRedis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo04-SpringDataRedis-RedisTemplate-DIY/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo04-SpringDataRedis-RedisTemplate-DIY/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo05-SpringDataRedis-stringRedisTemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo05-SpringDataRedis-stringRedisTemplate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
