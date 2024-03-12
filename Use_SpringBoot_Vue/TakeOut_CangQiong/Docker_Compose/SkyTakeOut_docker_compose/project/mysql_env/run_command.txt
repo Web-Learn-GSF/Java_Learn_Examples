@@ -1,0 +1,11 @@
+docker run -d \
+  --name mysql-icwp-alone \
+  -p 3306:3306 \
+  -e TZ=Asia/Shanghai \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  -v ./data:/var/lib/mysql \
+  -v ./conf:/etc/mysql/conf.d \
+  -v ./init:/docker-entrypoint-initdb.d \
+  -v ./log:/var/log/mysql \
+  --network icwp-alone \
+  mysql:5.7

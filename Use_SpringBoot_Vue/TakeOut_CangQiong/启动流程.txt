@@ -1,1 +1,19 @@
-1、运行nginx
+1、将数据插入到MySQL
+
+2、运行nginx
+
+3、启动阿里云OSS（按照教程，在自己的账号中启动）
+	1）教程：https://blog.csdn.net/AN_NI_112/article/details/132076550
+	2）如何查看endpoint的值：
+		- 点击创建的oss示例；
+		- 点击概览：往下翻，看到访问端口；
+		- Bucket名字后缀的就是endpoint
+
+4、启动Redis：点击目录下的启动脚本：GSF-Start.bat
+
+
+注意：
+1、订单支付功能无法实现，用这篇文章提到的方法，注释掉相关代码【mp-weixin里面的代码已经是注释过的了】：
+https://blog.csdn.net/RuanFun/article/details/135861498?spm=1001.2014.3001.5501
+
+

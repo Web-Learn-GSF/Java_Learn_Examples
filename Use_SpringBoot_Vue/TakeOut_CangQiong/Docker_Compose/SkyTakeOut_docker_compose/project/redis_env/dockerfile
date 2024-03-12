@@ -1,0 +1,7 @@
+# 指定操作的镜像
+FROM redis:7.0.15
+
+RUN mkdir /log
+RUN touch /log/redis.log
+
+EXPOSE 6379

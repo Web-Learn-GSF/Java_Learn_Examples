@@ -1,4 +1,4 @@
-sky:
+ sky:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     host: localhost
@@ -6,3 +6,16 @@ sky:
     database: sky_take_out
     username: root
     password: 123456
+  alioss-gsf:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    bucket-name: sky-take-out-gsf
+    access-key-secret: ECyZAfVTC5FuFinbS8vbl6QT4ghWgq
+    access-key-id: LTAI5tNdcLQruEKHoHS3atAA
+  redis-gsf:
+    port: 6379
+    host: localhost
+    password: 123456
+    database: 10
+  wechat-gsf:
+    appid: wx56d28e5fe24120e4
+    secret: 016f6c6d698989f78c0e1bc1d3125fb5

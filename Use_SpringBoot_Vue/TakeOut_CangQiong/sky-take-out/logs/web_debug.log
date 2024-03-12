@@ -1,0 +1,334 @@
+2024-03-12 15:48:00.103 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:48:00.115 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:33:00.000934400(LocalDateTime)
+2024-03-12 15:48:00.129 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:49:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:49:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:34:00.001521100(LocalDateTime)
+2024-03-12 15:49:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:50:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:50:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:35:00.000273900(LocalDateTime)
+2024-03-12 15:50:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:51:00.102 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:51:00.115 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:36:00.001622200(LocalDateTime)
+2024-03-12 15:51:00.128 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:52:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:52:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:37:00.001187200(LocalDateTime)
+2024-03-12 15:52:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:53:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:53:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:38:00.000631100(LocalDateTime)
+2024-03-12 15:53:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:54:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:54:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:39:00.000461900(LocalDateTime)
+2024-03-12 15:54:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:54:20.317 [http-nio-8090-exec-1] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==>  Preparing: select * from employee where username = ?
+2024-03-12 15:54:20.317 [http-nio-8090-exec-1] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==> Parameters: admin(String)
+2024-03-12 15:54:20.321 [http-nio-8090-exec-1] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - <==      Total: 1
+2024-03-12 15:54:20.459 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ?
+2024-03-12 15:54:20.460 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:54:20.461 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.461 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:20.461 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2(Integer)
+2024-03-12 15:54:20.462 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.462 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:54:20.462 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:54:20.462 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:54:20.462 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:54:20.463 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.463 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.463 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==>  Preparing: select sum(amount) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:54:20.463 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:20.463 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:54:20.463 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 3(Integer)
+2024-03-12 15:54:20.464 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.464 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:54:20.464 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.sumByMap - <==      Total: 1
+2024-03-12 15:54:20.464 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:54:20.464 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:54:20.465 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:54:20.465 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.465 [http-nio-8090-exec-6] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.465 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:20.465 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:54:20.465 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:54:20.465 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 5(Integer)
+2024-03-12 15:54:20.466 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.466 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.466 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:20.466 [http-nio-8090-exec-5] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==>  Preparing: select count(id) from user WHERE create_time > ? and create_time < ?
+2024-03-12 15:54:20.466 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 6(Integer)
+2024-03-12 15:54:20.467 [http-nio-8090-exec-5] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:54:20.467 [http-nio-8090-exec-5] DEBUG com.sky.mapper.UserMapper.getUserByMap - <==      Total: 1
+2024-03-12 15:54:20.467 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.467 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ?
+2024-03-12 15:54:20.468 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime)
+2024-03-12 15:54:20.468 [http-nio-8090-exec-7] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:20.495 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2024-03-12 15:54:20.495 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==> Parameters: 2(Integer)
+2024-03-12 15:54:20.496 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - <==      Total: 1
+2024-03-12 15:54:20.508 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:20.508 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 2(Integer)
+2024-03-12 15:54:20.509 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:54:20.509 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:20.509 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 3(Integer)
+2024-03-12 15:54:20.510 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:54:20.510 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:20.510 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 4(Integer)
+2024-03-12 15:54:20.511 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:54:58.555 [http-nio-8090-exec-5] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==>  Preparing: select * from employee where username = ?
+2024-03-12 15:54:58.556 [http-nio-8090-exec-5] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==> Parameters: admin(String)
+2024-03-12 15:54:58.557 [http-nio-8090-exec-5] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - <==      Total: 1
+2024-03-12 15:54:58.589 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2024-03-12 15:54:58.590 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ?
+2024-03-12 15:54:58.590 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==> Parameters: 2(Integer)
+2024-03-12 15:54:58.590 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:54:58.590 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:58.590 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-9] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 3(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==>  Preparing: select sum(amount) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.591 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:54:58.591 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:54:58.591 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:54:58.592 [http-nio-8090-exec-2] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.592 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.sumByMap - <==      Total: 1
+2024-03-12 15:54:58.592 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:58.592 [http-nio-8090-exec-8] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.592 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:54:58.592 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 5(Integer)
+2024-03-12 15:54:58.592 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:54:58.592 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.593 [http-nio-8090-exec-10] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.593 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:54:58.593 [http-nio-8090-exec-10] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==>  Preparing: select count(id) from user WHERE create_time > ? and create_time < ?
+2024-03-12 15:54:58.593 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 6(Integer)
+2024-03-12 15:54:58.593 [http-nio-8090-exec-10] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:54:58.598 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.598 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ?
+2024-03-12 15:54:58.599 [http-nio-8090-exec-10] DEBUG com.sky.mapper.UserMapper.getUserByMap - <==      Total: 1
+2024-03-12 15:54:58.599 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime)
+2024-03-12 15:54:58.599 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:54:58.604 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:58.604 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 2(Integer)
+2024-03-12 15:54:58.605 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:54:58.605 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:58.605 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 3(Integer)
+2024-03-12 15:54:58.605 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:54:58.605 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:54:58.606 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 4(Integer)
+2024-03-12 15:54:58.606 [http-nio-8090-exec-6] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:55:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:55:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:40:00.001854600(LocalDateTime)
+2024-03-12 15:55:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 15:55:52.789 [http-nio-8090-exec-9] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==>  Preparing: select * from employee where username = ?
+2024-03-12 15:55:52.789 [http-nio-8090-exec-9] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - ==> Parameters: admin(String)
+2024-03-12 15:55:52.791 [http-nio-8090-exec-9] DEBUG com.sky.mapper.EmployeeMapper.getByUsername - <==      Total: 1
+2024-03-12 15:55:52.822 [http-nio-8090-exec-8] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==>  Preparing: SELECT count(0) FROM orders WHERE status = ?
+2024-03-12 15:55:52.822 [http-nio-8090-exec-8] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - ==> Parameters: 2(Integer)
+2024-03-12 15:55:52.822 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:55:52.822 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ?
+2024-03-12 15:55:52.822 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:55:52.822 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:55:52.822 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:55:52.822 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 1(Integer)
+2024-03-12 15:55:52.823 [http-nio-8090-exec-8] DEBUG com.sky.mapper.OrderMapper.pageQuery_COUNT - <==      Total: 1
+2024-03-12 15:55:52.823 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.823 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.823 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:55:52.823 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2(Integer)
+2024-03-12 15:55:52.823 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==>  Preparing: select count(id) from setmeal WHERE status = ?
+2024-03-12 15:55:52.823 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - ==>  Preparing: select count(id) from dish WHERE status = ?
+2024-03-12 15:55:52.823 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.823 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:55:52.823 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - ==> Parameters: 0(Integer)
+2024-03-12 15:55:52.823 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==>  Preparing: select sum(amount) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:55:52.824 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.sumByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:55:52.824 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.824 [http-nio-8090-exec-6] DEBUG com.sky.mapper.SetmealMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.824 [http-nio-8090-exec-7] DEBUG com.sky.mapper.DishMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.824 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:55:52.824 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 3(Integer)
+2024-03-12 15:55:52.824 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.sumByMap - <==      Total: 1
+2024-03-12 15:55:52.824 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and order_time < ? and status = ?
+2024-03-12 15:55:52.824 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime), 5(Integer)
+2024-03-12 15:55:52.825 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.825 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:55:52.825 [http-nio-8090-exec-1] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.825 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 5(Integer)
+2024-03-12 15:55:52.825 [http-nio-8090-exec-1] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==>  Preparing: select count(id) from user WHERE create_time > ? and create_time < ?
+2024-03-12 15:55:52.825 [http-nio-8090-exec-1] DEBUG com.sky.mapper.UserMapper.getUserByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 2024-03-12T23:59:59.999999999(LocalDateTime)
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ? and status = ?
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime), 6(Integer)
+2024-03-12 15:55:52.826 [http-nio-8090-exec-1] DEBUG com.sky.mapper.UserMapper.getUserByMap - <==      Total: 1
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==>  Preparing: select count(id) from orders WHERE order_time > ?
+2024-03-12 15:55:52.826 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - ==> Parameters: 2024-03-12T00:00(LocalDateTime)
+2024-03-12 15:55:52.827 [http-nio-8090-exec-5] DEBUG com.sky.mapper.OrderMapper.countByMap - <==      Total: 1
+2024-03-12 15:55:52.842 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:55:52.842 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 2(Integer)
+2024-03-12 15:55:52.842 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:55:52.842 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:55:52.842 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 3(Integer)
+2024-03-12 15:55:52.843 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:55:52.843 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==>  Preparing: select count(id) from orders where status = ?
+2024-03-12 15:55:52.843 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - ==> Parameters: 4(Integer)
+2024-03-12 15:55:52.844 [http-nio-8090-exec-4] DEBUG com.sky.mapper.OrderMapper.countStatus - <==      Total: 1
+2024-03-12 15:56:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 15:56:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:41:00.001169(LocalDateTime)
+2024-03-12 15:56:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:03:00.104 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:03:00.116 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:48:00.000975100(LocalDateTime)
+2024-03-12 16:03:00.129 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:04:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:04:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:49:00.001498100(LocalDateTime)
+2024-03-12 16:04:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:05:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:05:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:50:00.001715200(LocalDateTime)
+2024-03-12 16:05:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:06:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:06:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:51:00.002000900(LocalDateTime)
+2024-03-12 16:06:00.004 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:07:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:07:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:52:00.001436900(LocalDateTime)
+2024-03-12 16:07:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:08:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:08:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:53:00.001671800(LocalDateTime)
+2024-03-12 16:08:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:09:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:09:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:54:00.001835200(LocalDateTime)
+2024-03-12 16:10:00.100 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:10:00.113 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:55:00.001592200(LocalDateTime)
+2024-03-12 16:10:00.125 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:11:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:11:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:56:00.001402100(LocalDateTime)
+2024-03-12 16:11:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:12:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:12:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:57:00.001701600(LocalDateTime)
+2024-03-12 16:12:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:13:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:13:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:58:00.001966600(LocalDateTime)
+2024-03-12 16:13:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:14:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:14:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T15:59:00.002056800(LocalDateTime)
+2024-03-12 16:14:00.004 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:15:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:15:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:00:00.001331300(LocalDateTime)
+2024-03-12 16:15:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:16:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:16:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:01:00.001409400(LocalDateTime)
+2024-03-12 16:16:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:17:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:17:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:02:00.001151600(LocalDateTime)
+2024-03-12 16:17:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:18:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:18:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:03:00.001374800(LocalDateTime)
+2024-03-12 16:18:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:19:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:19:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:04:00.000878200(LocalDateTime)
+2024-03-12 16:19:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:20:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:20:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:05:00.001929(LocalDateTime)
+2024-03-12 16:20:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:21:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:21:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:06:00.001267300(LocalDateTime)
+2024-03-12 16:21:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:22:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:22:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:07:00.000657100(LocalDateTime)
+2024-03-12 16:22:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:23:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:23:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:08:00.001784600(LocalDateTime)
+2024-03-12 16:23:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:24:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:24:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:09:00.000981700(LocalDateTime)
+2024-03-12 16:24:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:25:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:25:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:10:00.000312700(LocalDateTime)
+2024-03-12 16:25:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:26:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:26:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:11:00.001452400(LocalDateTime)
+2024-03-12 16:26:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:27:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:27:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:12:00.002047(LocalDateTime)
+2024-03-12 16:27:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:28:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:28:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:13:00.000767100(LocalDateTime)
+2024-03-12 16:28:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:29:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:29:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:14:00.000503700(LocalDateTime)
+2024-03-12 16:29:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:30:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:30:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:15:00.000775200(LocalDateTime)
+2024-03-12 16:31:00.104 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:31:00.116 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:16:00.001568300(LocalDateTime)
+2024-03-12 16:31:00.129 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:32:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:32:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:17:00.000895100(LocalDateTime)
+2024-03-12 16:32:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:33:00.012 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:33:00.012 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:18:00.002016200(LocalDateTime)
+2024-03-12 16:33:00.013 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:34:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:34:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:19:00.001327300(LocalDateTime)
+2024-03-12 16:34:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:35:00.101 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:35:00.114 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:20:00.000976200(LocalDateTime)
+2024-03-12 16:35:00.127 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:38:00.101 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:38:00.114 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:23:00.001233900(LocalDateTime)
+2024-03-12 16:38:00.126 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:46:00.099 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:46:00.112 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:31:00.001731900(LocalDateTime)
+2024-03-12 16:46:00.124 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:47:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:47:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:32:00.000946500(LocalDateTime)
+2024-03-12 16:47:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:48:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:48:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:33:00.000702900(LocalDateTime)
+2024-03-12 16:48:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:49:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:49:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:34:00.000351300(LocalDateTime)
+2024-03-12 16:49:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:50:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:50:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:35:00.001509400(LocalDateTime)
+2024-03-12 16:50:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:51:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:51:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:36:00.001569300(LocalDateTime)
+2024-03-12 16:51:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:52:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:52:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:37:00.001295(LocalDateTime)
+2024-03-12 16:52:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:53:00.103 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:53:00.116 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:38:00.001050800(LocalDateTime)
+2024-03-12 16:53:00.128 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:54:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:54:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:39:00.001731(LocalDateTime)
+2024-03-12 16:54:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:55:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:55:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:40:00.002040600(LocalDateTime)
+2024-03-12 16:55:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:56:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:56:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:41:00.000730600(LocalDateTime)
+2024-03-12 16:56:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:57:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:57:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:42:00.001414600(LocalDateTime)
+2024-03-12 16:57:00.003 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:58:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:58:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:43:00.001465600(LocalDateTime)
+2024-03-12 16:58:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 16:59:00.000 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 16:59:00.001 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:44:00.000872400(LocalDateTime)
+2024-03-12 16:59:00.002 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0
+2024-03-12 17:00:00.016 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==>  Preparing: select * from orders where status = ? and order_time < ?
+2024-03-12 17:00:00.016 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - ==> Parameters: 1(Integer), 2024-03-12T16:45:00.002051600(LocalDateTime)
+2024-03-12 17:00:00.017 [scheduling-1] DEBUG c.sky.mapper.OrderMapper.getByStatusAndOrderTimeLT - <==      Total: 0

@@ -1,0 +1,75 @@
+# /sky-take-out_docker_compose/project/
+
+version: '1'
+services:
+   mysql:
+      build: ./mysql_env
+      image: sky_take_out-mysql5.7:compose
+      container_name: sky_take_out-mysql-compose
+      environment:
+         - MYSQL_ROOT_PASSWORD=123456
+         - TZ=Asia/Shanghai
+      volumes:
+         - /mysql_env/conf:/etc/mysql/conf.d                   # 挂载配置文件
+         - ./mysql_env/init:/docker-entrypoint-initdb.d/       # 挂载初始化文件
+         - ../data/mysql:/var/lib/mysql                        # 挂载数据库数据
+         - ../log/mysql:/var/log/mysql                         # 挂载日志
+      ports:
+         - "3306:3306"
+      restart: always
+      networks:
+         - net-sky_take_out
+
+   redis:
+      build: ./redis_env
+      image: sky_take_out-redis7.0.15:compose
+      container_name: sky_take_out-redis-compose
+      volumes:
+         - /redis_env/conf/redis.conf:/usr/local/etc/redis/redis.conf    # 挂载配置文件
+         - ../data/redis:/data                                                             # 挂载数据库数据
+         - ../log/redis:/logs                                                              # 挂载日志
+      command: redis-server /usr/local/etc/redis/redis.conf
+      ports:
+         - "6379:6379"
+      restart: always
+      networks:
+         - net-sky_take_out
+
+   springboot:
+      build: ./jdk_env
+      image: sky_take_out-jdk8:compose
+      container_name: sky_take_out-java-compose
+      volumes:
+         - ../log/springboot:/sky_take_out/logs    # 挂载log文件
+      ports:
+         - "8080:8080"
+      stdin_open: true
+      tty: true
+      restart: always
+      networks:
+         - net-sky_take_out
+      depends_on:
+         - mysql
+         - redis
+
+   nginx:
+      build: ./nginx_env
+      image: sky_take_out-nginx:compose
+      container_name: sky_take_out-nginx-compose
+      ports:
+         - "80:80"
+         - "88:88"
+      volumes:
+         - ./nginx_env/conf/nginx.conf:/etc/nginx/nginx.conf      # 挂载默认配置文件
+         - ./nginx_env/conf/conf.d:/etc/nginx/conf.d              # 挂载自定义配置文件
+         - ./nginx_env/html:/usr/share/nginx/html                 # 挂载静态文件
+         - ../log/nginx:/var/log/nginx                            # 挂载日志
+      restart: always
+      networks:
+         - net-sky_take_out
+      depends_on:
+         - springboot
+
+networks:
+   net-sky_take_out:
+      name: net-sky_take_out-compose

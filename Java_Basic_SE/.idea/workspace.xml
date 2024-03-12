@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="970329ab-e868-4523-b295-435a2da496dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/Big_Event/code-springboot/src/main/java/com/itheima/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/exception/AutoFillException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/exception/DataAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/annotation/AutoFill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/aspect/AutoFillAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/config/OssConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/PayNotifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/SetMealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/WorkSpaceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/AddressBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/interceptor/JwtTokenUserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/AddressBookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/ReportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetMealDishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/SetmealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/AddressBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/SetMealDishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/WorkspaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/SetMealDishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/WorkspaceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/task/OrderTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/task/WebSocketTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/websocket/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/AddressBookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/DishFlavorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/OrderDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/SetMealDishMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/SetMealMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/ShoppingCartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Client_Redis/demo03-SpringDataRedis-RedisTemplate/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Client_Redis/demo03-SpringDataRedis-RedisTemplate/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Client_Redis/demo04-SpringDataRedis-RedisTemplate-DIY/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Client_Redis/demo04-SpringDataRedis-RedisTemplate-DIY/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_Client_Redis/demo05-SpringDataRedis-stringRedisTemplate/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_Client_Redis/demo05-SpringDataRedis-stringRedisTemplate/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/nginx-1.20.2/logs/nginx.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/constant/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/constant/MessageConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/utils/AliOssUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-common/src/main/java/com/sky/utils/AliOssUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-pojo/src/main/java/com/sky/dto/DishDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-pojo/src/main/java/com/sky/dto/DishDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/SkyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/SkyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/controller/admin/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/interceptor/JwtTokenAdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/mapper/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/java/com/sky/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/sky-take-out/sky-server/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/启动流程.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Use_SpringBoot_Vue/TakeOut_CangQiong/启动流程.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\GSF_Software\Web_Repository\Local" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../GSF_Software/Web/apache-maven-3.9.5" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="D:\GSF_Software\Web\apache-maven-3.9.5\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ct0OlPyzI4K1PhvOh6gv3K7gDz" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.29727274",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.test1" />
+      <module name="Java_Basic_SE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="970329ab-e868-4523-b295-435a2da496dc" name="Changes" comment="" />
+      <created>1708915539535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708915539535</updated>
+      <workItem from="1708915540606" duration="5503000" />
+      <workItem from="1709802015954" duration="372000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

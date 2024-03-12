@@ -1,0 +1,201 @@
+2024-03-11 19:43:37.603 [main] INFO  com.sky.SkyApplication - Starting SkyApplication v1.0-SNAPSHOT using Java 1.8.0_111 on ed351b0d41d3 with PID 1 (/sky_take_out/sky-server.jar started by root in /sky_take_out)
+2024-03-11 19:43:37.605 [main] INFO  com.sky.SkyApplication - The following 1 profile is active: "pro"
+2024-03-11 19:43:38.184 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-11 19:43:38.187 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-11 19:43:38.210 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-11 19:43:38.807 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-11 19:43:38.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-11 19:43:38.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-11 19:43:38.814 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-11 19:43:38.852 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-11 19:43:38.853 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1209 ms
+2024-03-11 19:43:38.950 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-03-11 19:43:39.046 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-03-11 19:43:39.252 [main] INFO  com.sky.config.OssConfiguration - 开始创建阿里云文件上传工具类对象：AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tNdcLQruEKHoHS3atAA, accessKeySecret=ECyZAfVTC5FuFinbS8vbl6QT4ghWgq, bucketName=sky-take-out-gsf)
+2024-03-11 19:43:39.441 [main] INFO  com.sky.config.RedisConfiguration - 开始创建redis模板类...
+2024-03-11 19:43:39.701 [main] INFO  com.sky.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2024-03-11 19:43:39.798 [main] INFO  com.sky.config.WebMvcConfiguration - 开始扩展消息转换器...
+2024-03-11 19:43:40.221 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-03-11 19:43:40.232 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-11 19:43:40.583 [main] INFO  com.sky.SkyApplication - Started SkyApplication in 3.33 seconds (JVM running for 3.644)
+2024-03-11 19:43:40.584 [main] INFO  com.sky.SkyApplication - server started
+2024-03-11 19:46:20.087 [http-nio-8080-exec-6] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-11 19:46:20.087 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-11 19:46:20.088 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-11 19:46:20.099 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.102 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.102 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.103 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.102 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.103 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.146 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.149 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.150 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.150 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.151 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.149 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:20.283 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:20.284 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:22.271 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjE4MDY1fQ.5yuOtZ4Xj7HzASKT80GtbICKrMSGbp1NtUtf7rqrOoQ
+2024-03-11 19:46:22.272 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.510 [http-nio-8080-exec-10] INFO  com.sky.controller.admin.EmployeeController - 员工登录：EmployeeLoginDTO(username=admin, password=123456)
+2024-03-11 19:46:23.545 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.546 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.548 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.548 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.549 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.549 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.549 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.549 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.548 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.550 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.551 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.552 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:23.578 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:23.579 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:29.160 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:29.161 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:29.161 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:29.162 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:29.162 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:29.162 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:29.160 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:29.163 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:29.166 [http-nio-8080-exec-10] INFO  com.sky.controller.admin.ReportController - 订单数据统计：2024-03-04,2024-03-10
+2024-03-11 19:46:29.167 [http-nio-8080-exec-6] INFO  com.sky.controller.admin.ReportController - 营业额数据统计：2024-03-04,2024-03-10
+2024-03-11 19:46:30.195 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:30.196 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:30.239 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:30.239 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:31.435 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:31.436 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:31.459 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:31.459 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:32.604 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:32.605 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:32.617 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:32.618 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:32.630 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:32.630 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:33.444 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:33.444 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:33.460 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:33.461 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:34.581 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:34.581 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:34.590 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:34.591 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:34.601 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:34.602 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.494 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.494 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.494 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.494 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.495 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.495 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.496 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.496 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.497 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.498 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:46:37.509 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:46:37.510 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 19:47:27.811 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 19:47:27.812 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:02:01.139 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-03-11 20:02:01.144 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-03-11 20:05:16.051 [main] INFO  com.sky.SkyApplication - Starting SkyApplication v1.0-SNAPSHOT using Java 1.8.0_111 on e7042de7d4ca with PID 1 (/sky_take_out/sky-server.jar started by root in /sky_take_out)
+2024-03-11 20:05:16.053 [main] INFO  com.sky.SkyApplication - The following 1 profile is active: "pro"
+2024-03-11 20:05:16.678 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-11 20:05:16.681 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-11 20:05:16.720 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-03-11 20:05:17.365 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-11 20:05:17.371 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-11 20:05:17.372 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-11 20:05:17.372 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-11 20:05:17.415 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-11 20:05:17.415 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1290 ms
+2024-03-11 20:05:17.519 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-03-11 20:05:17.631 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-03-11 20:05:17.906 [main] INFO  com.sky.config.OssConfiguration - 开始创建阿里云文件上传工具类对象：AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tNdcLQruEKHoHS3atAA, accessKeySecret=ECyZAfVTC5FuFinbS8vbl6QT4ghWgq, bucketName=sky-take-out-gsf)
+2024-03-11 20:05:18.143 [main] INFO  com.sky.config.RedisConfiguration - 开始创建redis模板类...
+2024-03-11 20:05:18.404 [main] INFO  com.sky.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2024-03-11 20:05:18.507 [main] INFO  com.sky.config.WebMvcConfiguration - 开始扩展消息转换器...
+2024-03-11 20:05:18.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-03-11 20:05:18.957 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-11 20:05:19.357 [main] INFO  com.sky.SkyApplication - Started SkyApplication in 3.747 seconds (JVM running for 4.11)
+2024-03-11 20:05:19.359 [main] INFO  com.sky.SkyApplication - server started
+2024-03-11 20:07:24.672 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-03-11 20:07:24.677 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-03-11 20:08:16.434 [main] INFO  com.sky.SkyApplication - Starting SkyApplication v1.0-SNAPSHOT using Java 1.8.0_111 on d80be522ddd2 with PID 1 (/sky_take_out/sky-server.jar started by root in /sky_take_out)
+2024-03-11 20:08:16.435 [main] INFO  com.sky.SkyApplication - The following 1 profile is active: "pro"
+2024-03-11 20:08:17.008 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-03-11 20:08:17.012 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-11 20:08:17.037 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-03-11 20:08:17.612 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-11 20:08:17.617 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-03-11 20:08:17.618 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-11 20:08:17.618 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-03-11 20:08:17.657 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-11 20:08:17.658 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1191 ms
+2024-03-11 20:08:17.745 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-03-11 20:08:17.837 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-03-11 20:08:18.057 [main] INFO  com.sky.config.OssConfiguration - 开始创建阿里云文件上传工具类对象：AliOssProperties(endpoint=oss-cn-beijing.aliyuncs.com, accessKeyId=LTAI5tNdcLQruEKHoHS3atAA, accessKeySecret=ECyZAfVTC5FuFinbS8vbl6QT4ghWgq, bucketName=sky-take-out-gsf)
+2024-03-11 20:08:18.258 [main] INFO  com.sky.config.RedisConfiguration - 开始创建redis模板类...
+2024-03-11 20:08:18.505 [main] INFO  com.sky.config.WebMvcConfiguration - 开始注册自定义拦截器...
+2024-03-11 20:08:18.602 [main] INFO  com.sky.config.WebMvcConfiguration - 开始扩展消息转换器...
+2024-03-11 20:08:19.025 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-03-11 20:08:19.041 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-11 20:08:19.412 [main] INFO  com.sky.SkyApplication - Started SkyApplication in 3.343 seconds (JVM running for 3.65)
+2024-03-11 20:08:19.414 [main] INFO  com.sky.SkyApplication - server started
+2024-03-11 20:09:01.009 [http-nio-8080-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-11 20:09:01.009 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-11 20:09:01.010 [http-nio-8080-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-11 20:09:01.021 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.021 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.021 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.021 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.032 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.032 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.055 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.058 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.060 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.060 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.060 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.062 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.190 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.191 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.598 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.598 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.606 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.607 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.608 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.609 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.610 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.610 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.611 [http-nio-8080-exec-6] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.611 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.612 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.614 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:01.622 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:01.622 [http-nio-8080-exec-3] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:04.312 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:04.313 [http-nio-8080-exec-1] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:04.314 [http-nio-8080-exec-1] INFO  com.sky.controller.admin.CategoryController - 分页查询：CategoryPageQueryDTO(page=1, pageSize=10, name=null, type=null)
+2024-03-11 20:09:05.426 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:05.427 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:05.427 [http-nio-8080-exec-7] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:05.428 [http-nio-8080-exec-5] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:05.429 [http-nio-8080-exec-7] INFO  com.sky.controller.admin.DishController - 菜品分页查询：DishPageQueryDTO(page=1, pageSize=10, name=null, categoryId=null, status=null)
+2024-03-11 20:09:06.564 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:06.564 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:06.565 [http-nio-8080-exec-8] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:06.564 [http-nio-8080-exec-9] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:07.377 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:07.378 [http-nio-8080-exec-4] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:07.417 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:07.417 [http-nio-8080-exec-2] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:08.462 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - jwt校验:eyJhbGciOiJIUzI1NiJ9.eyJlbXBJZCI6MSwiZXhwIjoxNzEwMjI5NTgzfQ.Yf0BTz4zBnJQzw_IzRXn0fO7cUGZDxyBHSV4dgd3eqc
+2024-03-11 20:09:08.462 [http-nio-8080-exec-10] INFO  com.sky.interceptor.JwtTokenAdminInterceptor - 当前员工id：1
+2024-03-11 20:09:08.464 [http-nio-8080-exec-10] INFO  com.sky.controller.admin.EmployeeController - 分页查询：EmployeePageQueryDTO(name=null, page=1, pageSize=10)
+2024-03-11 20:11:02.197 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-03-11 20:11:02.204 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

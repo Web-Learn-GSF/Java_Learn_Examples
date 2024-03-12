@@ -1,0 +1,8 @@
+# 镜像构建
+docker build -t jdk8-sky_take_out:alone .
+
+# 镜像运行
+docker run -it -d \
+  --name jdk8-sky_take_out-alone \
+  -p 8080:8080 \
+  jdk8-sky_take_out:alone
