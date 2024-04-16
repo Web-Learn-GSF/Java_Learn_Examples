@@ -16,6 +16,7 @@ public class UserServiceImpl implements UserService {
         System.out.println("执行User的update方法");
     }
 
+
     @Override
     public void search() {
         System.out.println("执行User的search方法");

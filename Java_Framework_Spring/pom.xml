@@ -16,6 +16,10 @@
     <module>Integrate_Mybatis_First_Way</module>
     <module>Integrate_Mybatis_Second_Way</module>
     <module>Transaction_Spring_Mybatis</module>
+    <module>IOC_1_General_Examples</module>
+    <module>IOC_1_General_Examples</module>
+      <module>IOC_2_DI</module>
+      <module>AOP_0_Static_Proxy</module>
   </modules>
 
   <properties>

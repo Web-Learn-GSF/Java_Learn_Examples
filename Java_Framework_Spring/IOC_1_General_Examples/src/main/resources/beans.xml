@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--底层源码实现-->
+    <bean id="MysqlImpl" class="com.example.Dao.UserSqlImpl"/>
+    <bean id="DaoImpl" class="com.example.Dao.UserDaoImpl"/>
+
+    <!--业务端代码实现-->
+    <bean id="ServiceImpl" class="com.example.Service.UserServiceImpl">
+        <!--注意: 这里的name并不是属性, 而是UserServiceImpl实现类里面setUserDao方法中set后面的那部分, 其中首字母要小写-->
+        <!--该方法的参数是引用另外一个bean, 这里不能用value，而是用ref：一个已经存在的对象-->
+        <property name="userDao" ref="MysqlImpl"/>
+    </bean>
+
+</beans>

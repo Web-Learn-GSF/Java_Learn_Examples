@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyTest {
+
     @Test
     public void Test(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -14,5 +15,7 @@ public class MyTest {
 //        userService.delete();
 //        userService.update();
 //        userService.search();
+
+
     }
 }

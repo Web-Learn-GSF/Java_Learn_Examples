@@ -18,8 +18,8 @@
     </environments>
 
     <!--    每一个Mapper.xml都需要在MyBatis核心配置文件中注册-->
-    <mappers>
-        <mapper class="GSF.Example.Dao.UserMapper"/>
-    </mappers>
+    <!--<mappers>-->
+    <!--    <mapper class="GSF.Example.Dao.UserMapper"/>-->
+    <!--</mappers>-->
 
 </configuration>
